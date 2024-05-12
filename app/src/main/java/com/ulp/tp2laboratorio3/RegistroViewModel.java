@@ -80,7 +80,6 @@ public class RegistroViewModel extends AndroidViewModel {
             bos.flush();
             oos.close();
             usuarioGuardado.postValue(true);
-            Toast.makeText(getApplication(), usuarioExistente ? " " : "", Toast.LENGTH_LONG).show();
             return usuarioExistente;
         } catch (IOException e) {
             usuarioGuardado.postValue(false);

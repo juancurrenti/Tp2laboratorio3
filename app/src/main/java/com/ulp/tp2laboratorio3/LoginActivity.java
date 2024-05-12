@@ -39,7 +39,7 @@ public class LoginActivity extends AppCompatActivity {
                 intent.putExtra("usuarioDatos", usuario);
                 startActivity(intent);
             } else {
-                Toast.makeText(getApplicationContext(), "No hay datos disponibles o error al leer.", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Usuario no registrado o contraseña incorrecta.", Toast.LENGTH_LONG).show();
             }
         });
 
